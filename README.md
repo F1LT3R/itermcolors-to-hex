@@ -52,4 +52,3 @@ Output:
     'Selection Color': '#333333'
 }
 ```
-
