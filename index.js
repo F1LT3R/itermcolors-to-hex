@@ -10,8 +10,8 @@ const load = file => {
 		const def = colors[name]
 
 		const r = def['Red Component'] * 255
-		const g = def['Blue Component'] * 255
-		const b = def['Green Component'] * 255
+		const g = def['Green Component'] * 255
+		const b = def['Blue Component'] * 255
 
 		const hex = rgbHex(r, g, b)
 
