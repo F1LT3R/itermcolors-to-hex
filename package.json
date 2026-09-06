@@ -1,7 +1,7 @@
 {
 	"name": "itermcolors-to-hex",
 	"main": "index.js",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "🎨  Convert sRGB colors from an .itermcolors plist into a hex color object.",
 	"license": "MIT",
 	"repository": "F1LT3R/itermcolors-to-hex",
