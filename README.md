@@ -12,7 +12,7 @@ Note: You can find iTerm2 color schemes here: [https://github.com/martinlindhe/b
 
 ## Install
 
-```
+```sh
 $ yarn add itermcolors-to-hex
 ```
 

@@ -1,5 +1,5 @@
 import test from 'ava'
-import itermcolorsToHex from '.'
+import itermcolorsToHex from './index.js'
 
 test('Loads iTerm2 color Github Light plist as hex color object', t => {
 	const iTerm2Colors = itermcolorsToHex('./base16-github.light.itermcolors')
@@ -26,7 +26,7 @@ test('Loads iTerm2 color Github Light plist as hex color object', t => {
 		'Cursor Text Color': '#ffffff',
 		'Foreground Color': '#c8c8fa',
 		'Selected Text Color': '#c8c8fa',
-		'Selection Color': '#333333'
+		'Selection Color': '#333333',
 	})
 })
 
@@ -55,7 +55,7 @@ test('Loads iTerm2 color Flat 256 plist as hex color object', t => {
 		'Cursor Text Color': '#2c3e50',
 		'Foreground Color': '#e0e0e0',
 		'Selected Text Color': '#e0e0e0',
-		'Selection Color': '#7f8c8d'
+		'Selection Color': '#7f8c8d',
 	})
 })
 
@@ -84,7 +84,7 @@ test('Loads iTerm2 color Flat Dark plist as hex color object', t => {
 		'Cursor Text Color': '#2c3e50',
 		'Foreground Color': '#e0e0e0',
 		'Selected Text Color': '#e0e0e0',
-		'Selection Color': '#7f8c8d'
+		'Selection Color': '#7f8c8d',
 	})
 })
 

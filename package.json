@@ -8,7 +8,7 @@
 	"author": {
 		"name": "F1LT3R",
 		"email": "al@pwn.io",
-		"url": "f1lt3r.io"
+		"url": "https://f1lt3r.io"
 	},
 	"scripts": {
 		"test": "xo && yarn run cover",
@@ -16,6 +16,7 @@
 		"watch": "ava --watch",
 		"cover": "nyc --reporter=lcov --reporter=html --reporter=text ava *.test.js",
 		"coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
+		"prepare": "simple-git-hooks",
 		"precommit": "yarn test"
 	},
 	"files": [
@@ -27,12 +28,14 @@
 		"rgb-hex": "^2.1.0"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
+		"ava": "^8.0.1",
 		"coveralls": "^3.0.0",
-		"git-hooks": "^1.1.10",
-		"git-pre-commit": "^2.1.3",
-		"nyc": "^11.6.0",
-		"xo": "^0.20.3"
+		"nyc": "^18.0.0",
+		"simple-git-hooks": "^2.14.0",
+		"xo": "^4.0.0"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "yarn test"
 	},
 	"nyc": {
 		"reporter": [
@@ -41,12 +44,16 @@
 		]
 	},
 	"xo": {
-		"esnext": true,
 		"semicolon": false,
-		"globals": [
-			"__dirname"
-		],
+		"languageOptions": {
+			"globals": {
+				"__dirname": "readonly"
+			}
+		},
 		"rules": {
+			"unicorn/prefer-module": 0,
+			"unicorn/prefer-node-protocol": 0,
+			"unicorn/no-for-each": 0,
 			"no-console": 1,
 			"space-before-function-paren": 0
 		}
