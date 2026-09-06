@@ -1,6 +1,7 @@
 {
 	"name": "itermcolors-to-hex",
 	"main": "index.js",
+	"type": "commonjs",
 	"version": "1.0.2",
 	"description": "🎨  Convert sRGB colors from an .itermcolors plist into a hex color object.",
 	"license": "MIT",
@@ -14,7 +15,7 @@
 		"test": "xo && yarn run cover",
 		"unit": "ava ",
 		"watch": "ava --watch",
-		"cover": "nyc --reporter=lcov --reporter=html --reporter=text ava *.test.js",
+		"cover": "nyc --reporter=lcov --reporter=html --reporter=text ava",
 		"coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
 		"prepare": "simple-git-hooks",
 		"precommit": "yarn test"
