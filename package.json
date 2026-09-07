@@ -25,8 +25,8 @@
 	],
 	"keywords": [],
 	"dependencies": {
-		"plist": "^3.0.1",
-		"rgb-hex": "^2.1.0"
+		"plist": "^4.0.0",
+		"rgb-hex": "^4.1.0"
 	},
 	"devDependencies": {
 		"ava": "^8.0.1",

@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 const plist = require('plist')
-const rgbHex = require('rgb-hex')
+const rgbHex = require('rgb-hex').default
 
 const load = file => {
 	const output = {}
